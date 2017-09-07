@@ -67,6 +67,7 @@ module.exports = {
 
 
     大家可能发现了‘webpack/hot/dev-server‘这句话，没错这就是我们的webpack-dev-server，她允许我们可以把本地项目跑在像nginx那样的web服务器上，更重要的是我们可以在package.json文件内定义scripts，同时修改webpack的配置文件来达到类似BrowserSync（即文件修改能被监听，并自动刷新浏览器）的效果！
+    
 安装webpack-dev-server执行：
 npm install webpack-dev-server --save-dev
 在package.json文件中为scripts添加：
@@ -74,8 +75,8 @@ npm install webpack-dev-server --save-dev
   "build": "webpack",
   "dev": "webpack-dev-server --devtool eval --progress --colors --content-base build"
 }
-最后我们的package.json代码是这样的：
 
+最后我们的package.json代码是这样的：
 
 {
   "name": "reactpro1",
