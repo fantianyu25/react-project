@@ -36,6 +36,10 @@
     "webpack-dev-server": "^2.7.1"
   },
   "dependencies": {
-    "url-loader": "^0.5.9"
+    "object-assign": "^4.1.1",
+    "rc-table": "^5.6.7",
+    "url-loader": "^0.5.9",
+    "webpack": "^3.5.6",
+    "webpack-dev-server": "^2.7.1"
   }
 }
