@@ -1,0 +1,29 @@
+@import "../../style/common.scss";
+
+.disk-sort {
+    display: flex;
+    cursor: pointer;
+
+    &-title {
+        display: flex;
+        align-items: center;
+    }
+
+    &-icon-group {
+        margin-left: 5px;
+
+        .disk-sort-icon-up, .disk-sort-icon-down {
+            display: block;
+            color: $colorUnsorted;
+        }
+
+        .disk-sort-icon-down {
+            margin-top: -5px;
+        }
+
+        .disk-sort-icon-sorted {
+            color: $colorSorted;
+        }
+    }
+}
+

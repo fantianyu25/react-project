@@ -1,0 +1,443 @@
+@import "../../style/themes/default";
+@import "~jgfe-styles/mixins/index";
+@import "../../input/style/mixin";
+@import "../../button/style/mixin";
+@import "../../layout/style/mixin";
+@import "./mixin";
+
+$form-prefix-cls: jgui-form;
+
+@include reset-form();
+
+label {
+  position: relative;
+
+  > .#{$iconfont-css-prefix} {
+    vertical-align: top;
+    font-size: $font-size-base;
+  }
+}
+
+.#{$form-prefix-cls}-item-required:before {
+  display: inline-block;
+  margin-right: 4px;
+  content: "*";
+  font-family: SimSun;
+  font-size: $font-size-base;
+  color: $label-required-color;
+}
+
+// Radio && Checkbox
+input[type="radio"],
+input[type="checkbox"] {
+  &[disabled],
+  &.disabled,
+  fieldset[disabled] & {
+    cursor: $cursor-disabled;
+  }
+}
+
+// These classes are used directly on <label>s
+.jgui-radio-inline,
+.jgui-radio-vertical,
+.jgui-checkbox-inline,
+.jgui-checkbox-vertical {
+  &.disabled,
+  fieldset[disabled] & {
+    cursor: $cursor-disabled;
+  }
+}
+
+// These classes are used on elements with <label> descendants
+.jgui-radio,
+.jgui-checkbox {
+  &.disabled,
+  fieldset[disabled] & {
+    label {
+      cursor: $cursor-disabled;
+    }
+  }
+}
+
+// Form items
+// You should wrap labels and controls in .#{$form-prefix-cls}-item for optimum spacing
+.#{$form-prefix-cls}-item {
+  font-size: $font-size-base;
+  margin-bottom: $form-item-margin-bottom;
+  color: #666;
+
+  // nested FormItem
+  & & {
+    margin-bottom: -$form-item-margin-bottom;
+  }
+
+  &-control {
+    line-height: 32px;
+    position: relative;
+    @include clearfix();
+  }
+
+  &-with-help {
+    margin-bottom: $form-item-margin-bottom - $font-size-base * $line-height-base - 3;
+  }
+
+  > div:first-child {
+    text-align: right;
+    vertical-align: middle;
+    padding: 7px 0;
+
+    label {
+      color: $label-color;
+
+      &:after {
+        content: ":";
+        margin: 0 8px 0 2px;
+        position: relative;
+        top: -0.5px;
+      }
+    }
+  }
+
+  .jgui-switch {
+    margin: 4px 0;
+  }
+
+  &.#{$form-prefix-cls}-no-colon > label:after {
+    content: " ";
+  }
+}
+
+.#{$form-prefix-cls}-explain {
+  line-height: 1.5;
+  margin-top: 3px;
+}
+
+.#{$form-prefix-cls}-explain,
+.#{$form-prefix-cls}-extra {
+  color: #999;
+}
+
+.#{$form-prefix-cls}-text {
+  display: inline-block;
+  padding-right: 8px;
+}
+
+.#{$form-prefix-cls}-split {
+  display: block;
+  text-align: center;
+}
+
+// 表单下的输入框尺寸唯一: 大尺寸
+form {
+  .has-feedback {
+    .jgui-input {
+      padding-right: 24px;
+    }
+  }
+
+  textarea.jgui-input {
+    height: auto;
+  }
+
+  // input[type=file]
+  .jgui-upload {
+    background: transparent;
+  }
+
+  input[type="radio"],
+  input[type="checkbox"] {
+    width: 14px;
+    height: 14px;
+  }
+
+  // Radios and checkboxes on same line
+  .jgui-radio-inline,
+  .jgui-checkbox-inline {
+    display: inline-block;
+    vertical-align: middle;
+    font-weight: normal;
+    cursor: pointer;
+    margin-left: 8px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+
+  .jgui-checkbox-vertical,
+  .jgui-radio-vertical {
+    display: block;
+  }
+
+  .jgui-checkbox-vertical + .jgui-checkbox-vertical,
+  .jgui-radio-vertical + .jgui-radio-vertical {
+    margin-left: 0;
+  }
+
+  .jgui-input-number {
+    margin-top: -1px;
+    margin-right: 8px;
+  }
+
+  .jgui-select,
+  .jgui-cascader-picker {
+    width: 100%;
+  }
+}
+
+// Input combined with select
+.jgui-input-group-wrap {
+  .jgui-select-selection {
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    &:hover {
+      border-color: $border-color-base;
+    }
+  }
+
+  .jgui-select-selection--single {
+    margin-left: -1px;
+    height: $input-height-lg;
+    background-color: #eee;
+    .jgui-select-selection__rendered {
+      padding-left: 8px;
+      padding-right: 25px;
+      line-height: 30px;
+    }
+  }
+
+  .jgui-select-open .jgui-select-selection {
+    border-color: $border-color-base;
+    box-shadow: none;
+  }
+}
+
+// Form layout
+//== Horizontal Form
+.#{$form-prefix-cls}-horizontal {
+  .#{$form-prefix-cls}-item {
+    @include make-row();
+  }
+
+  .jgui-radio-inline,
+  .jgui-checkbox-inline {
+    vertical-align: baseline;
+  }
+}
+
+//== Inline Form
+.#{$form-prefix-cls}-inline {
+  .#{$form-prefix-cls}-item {
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 0;
+
+    &-with-help {
+      margin-bottom: 24px;
+    }
+
+    > div {
+      display: inline-block;
+    }
+  }
+
+  .#{$form-prefix-cls}-text {
+    display: inline-block;
+  }
+
+  .has-feedback {
+    display: inline-block;
+  }
+
+  // Fix https://github.comdesigndesign/issues/1040
+  .#{$form-prefix-cls}-explain {
+    position: absolute;
+  }
+}
+
+.#{$form-prefix-cls}-horizontal,
+.#{$form-prefix-cls}-inline {
+  label {
+    > input[type="radio"],
+    > input[type="checkbox"] {
+      margin-right: 4px;
+    }
+  }
+}
+
+// Validation state
+.has-success,
+.has-warning,
+.has-error,
+.is-validating {
+  &.has-feedback:after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    visibility: visible;
+    font-family: "jguicon" !important;
+    @include square($input-height-lg);
+    line-height: $input-height-lg;
+    text-align: center;
+    font-size: 14px;
+    animation: zoomIn .3s $ease-out-back;
+  }
+}
+
+.has-success {
+  &.has-feedback:after {
+    animation-name: diffZoomIn1 !important;
+  }
+}
+
+.has-error {
+  &.has-feedback:after {
+    animation-name: diffZoomIn2 !important;
+  }
+}
+
+.has-warning {
+  &.has-feedback:after {
+    animation-name: diffZoomIn3 !important;
+  }
+}
+
+.has-success {
+  .jgui-input {
+    border-color: $input-border-color;
+    box-shadow: none;
+  }
+
+  &.has-feedback:after {
+    content: '\e9e1';
+    color: $success-color;
+  }
+}
+
+.has-warning {
+  @include form-control-validation($warning-color, $warning-color);
+
+  &.has-feedback:after {
+    content: '\e9d9';
+    color: $warning-color;
+  }
+
+  //select
+  .jgui-select {
+    &-selection {
+      border-color: $warning-color;
+      box-shadow: 0 0 0 2px fade($warning-color, 20%);
+    }
+    &-arrow {
+      color: $warning-color;
+    }
+  }
+
+  //datepicker
+  .jgui-calendar-picker-icon:after {
+    color: $warning-color;
+  }
+
+  //timepicker
+  .jgui-time-picker-icon:after {
+    color: $warning-color;
+  }
+
+  //input-number
+  .jgui-input-number {
+    border-color: $warning-color;
+    box-shadow: 0 0 0 2px fade($warning-color, 20%);
+    &:not([disabled]):hover {
+      border-color: $warning-color;
+    }
+  }
+}
+
+.has-error {
+  @include form-control-validation($error-color, $error-color);
+
+  &.has-feedback:after {
+    content: '\e9d3';
+    color: $error-color;
+  }
+
+  //select
+  .jgui-select {
+    &-selection {
+      border-color: $error-color;
+      box-shadow: 0 0 0 2px fade($error-color, 20%);
+    }
+
+    &-arrow {
+      color: $error-color;
+    }
+  }
+
+  //datepicker
+  .jgui-calendar-picker-icon:after {
+    color: $error-color;
+  }
+
+  //timepicker
+  .jgui-time-picker-picker-icon:after {
+    color: $error-color;
+  }
+
+  //input-number
+  .jgui-input-number {
+    border-color: $error-color;
+    box-shadow: 0 0 0 2px fade($error-color, 20%);
+    &:not([disabled]):hover {
+      border-color: $error-color;
+    }
+  }
+}
+
+.is-validating {
+  &.has-feedback:after {
+    display: inline-block;
+    animation: loadingCircle 1s infinite linear;
+    content: "\ea16";
+    color: #999;
+  }
+}
+
+.jgui-advanced-search-form {
+  .#{$form-prefix-cls}-item {
+    margin-bottom: 16px;
+  }
+  .jgui-input,
+  .jgui-input-group .jgui-input,
+  .jgui-input-group .jgui-input-group-addon {
+    height: 28px;
+  }
+}
+
+// need there different zoom animation
+// otherwise won't trigger anim
+@keyframes diffZoomIn1 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes diffZoomIn2 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes diffZoomIn3 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

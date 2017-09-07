@@ -6,6 +6,6 @@
  */
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from "./components/productBox";
+import App from "./src/components/productBox";
 
 ReactDOM.render(<App />, document.getElementById('app'));

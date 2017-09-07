@@ -1,0 +1,73 @@
+.input-password-wrap {
+    line-height: 0px;
+    .error-tip  {
+        display: none;
+        margin-top: 7px;
+        line-height: 12px;
+        color: #F6645D;
+    }
+    .warn-tip {
+        display: none;
+    }
+    .level-wrap {
+        display: none;
+        height: 40px;
+        .level-list {
+            height: 17px;
+            width: 100%;
+            margin-top: 13px;
+            .level-item {
+                width: 58px;
+                height: 17px;
+                line-height: 17px;
+                text-align: center;
+                background: #ddd;
+                color: #fff;
+                float: left;
+                margin-right: 2px;
+                border-radius: 2px;
+            }
+        }
+        .tip {
+            line-height: 17px;
+            margin-top: 6px;
+            color: #666;
+        }
+    }
+    .level-wrap.level1 {
+        .level-list {
+            .level-item {
+                background: #ff5832;
+                &.item2, &.item3 {
+                    background: #ddd;
+                }
+            }
+        }
+        .tip {
+            color: #e35144;
+            word-break: break-word;
+        }
+    }
+    .level-wrap.level2 {
+        .level-list {
+            .level-item {
+                background: #fda00e;
+                &.item3 {
+                    background: #ddd;
+                }
+            }
+        }
+        .tip {
+            color: #ee8204;
+        }
+    }
+    .level-wrap.level3 {
+        .level-list .level-item {
+            background: #22aa55;
+        }
+        .tip {
+            color: #24AE5D;
+            word-break: break-word;
+        }
+    }
+}

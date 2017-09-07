@@ -1,0 +1,6 @@
+@import "../../style/themes/default";
+
+.jgui-affix {
+  position: fixed;
+  z-index: $zindex-affix;
+}

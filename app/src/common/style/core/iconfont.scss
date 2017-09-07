@@ -1,0 +1,932 @@
+// font-face
+// $icon-url： 字体源文件的地址
+.#{$iconfont-css-prefix} {
+  font-family: 'jguicon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+$iconfont-color-css-prefix: #{$iconfont-css-prefix}-color;
+$iconfont-color-file-css-prefix: #{$iconfont-color-css-prefix}-file;
+
+.#{$iconfont-css-prefix}-caret-circle-o-up:before        {content:"\e60c";}
+.#{$iconfont-css-prefix}-android:before                  {content:"\e64f";}
+.#{$iconfont-css-prefix}-chrome:before                   {content:"\e65c";}
+.#{$iconfont-css-prefix}-appstore-o:before               {content:"\e931";}
+.#{$iconfont-css-prefix}-appstore:before                 {content:"\e930";}
+.#{$iconfont-css-prefix}-apple:before                    {content:"\e64e";}
+.#{$iconfont-css-prefix}-github:before                   {content:"\e674";}
+.#{$iconfont-css-prefix}-inbox:before                    {content:"\e67b";}
+.#{$iconfont-css-prefix}-ie:before                       {content:"\e67c";}
+.#{$iconfont-css-prefix}-smile:before                    {content:"\e902";}
+.#{$iconfont-css-prefix}-smile-circle:before             {content:"\e676";}
+.#{$iconfont-css-prefix}-meh-circle:before               {content:"\e678";}
+.#{$iconfont-css-prefix}-frown:before                    {content:"\e673";}
+.#{$iconfont-css-prefix}-frown-circle:before             {content:"\e672";}
+.#{$iconfont-css-prefix}-meh:before                      {content:"\e679";}
+.#{$iconfont-css-prefix}-pie-chart:before                {content:"\e68a";}
+.#{$iconfont-css-prefix}-tags:before                     {content:"\e656";}
+.#{$iconfont-css-prefix}-tags-o:before                   {content:"\e657";}
+.#{$iconfont-css-prefix}-tag:before                      {content:"\e658";}
+.#{$iconfont-css-prefix}-tag-o:before                    {content:"\e659";}
+.#{$iconfont-css-prefix}-cloud:before                    {content:"\e9a9";}
+.#{$iconfont-css-prefix}-cloud-o:before                  {content:"\e9aa";}
+.#{$iconfont-css-prefix}-cloud-upload-o:before           {content:"\e9a4";}
+.#{$iconfont-css-prefix}-cloud-download-o:before         {content:"\e9a6";}
+.#{$iconfont-css-prefix}-cloud-upload:before             {content:"\e9a3";}
+.#{$iconfont-css-prefix}-cloud-download:before           {content:"\e9a5";}
+.#{$iconfont-css-prefix}-star-o:before                   {content:"\e9fb";}
+.#{$iconfont-css-prefix}-star:before                     {content:"\e9fa";}
+.#{$iconfont-css-prefix}-environment:before              {content:"\e665";}
+.#{$iconfont-css-prefix}-environment-o:before            {content:"\e666";}
+.#{$iconfont-css-prefix}-eye:before                      {content:"\e66e";}
+.#{$iconfont-css-prefix}-eye-o:before                    {content:"\e66d";}
+.#{$iconfont-css-prefix}-camera:before                   {content:"\e653";}
+.#{$iconfont-css-prefix}-camera-o:before                 {content:"\e652";}
+.#{$iconfont-css-prefix}-aliwangwang:before              {content:"\e64b";}
+.#{$iconfont-css-prefix}-aliwangwang-o:before            {content:"\e64a";}
+.#{$iconfont-css-prefix}-windows:before                  {content:"\e6a0";}
+.#{$iconfont-css-prefix}-shopping-cart:before            {content:"\e692";}
+.#{$iconfont-css-prefix}-unlock:before                   {content:"\e998";}
+.#{$iconfont-css-prefix}-lock:before                     {content:"\e99a";}
+.#{$iconfont-css-prefix}-save:before                     {content:"\e69e";}
+.#{$iconfont-css-prefix}-user:before                     {content:"\e69c";}
+.#{$iconfont-css-prefix}-video-camera:before             {content:"\e69b";}
+.#{$iconfont-css-prefix}-to-top:before                   {content:"\e69a";}
+.#{$iconfont-css-prefix}-team:before                     {content:"\e680";}
+.#{$iconfont-css-prefix}-tablet:before                   {content:"\e695";}
+.#{$iconfont-css-prefix}-solution:before                 {content:"\e68f";}
+.#{$iconfont-css-prefix}-poweroff:before                 {content:"\e691";}
+.#{$iconfont-css-prefix}-search:before                   {content:"\ea02";}
+.#{$iconfont-css-prefix}-share-alt:before                {content:"\e68e";}
+.#{$iconfont-css-prefix}-setting:before                  {content:"\e9eb";}
+.#{$iconfont-css-prefix}-poweroff:before                 {content:"\e68b";}
+.#{$iconfont-css-prefix}-picture:before                  {content:"\e689";}
+.#{$iconfont-css-prefix}-phone:before                    {content:"\e688";}
+.#{$iconfont-css-prefix}-paper-clip:before               {content:"\ea0b";}
+.#{$iconfont-css-prefix}-notification:before             {content:"\e90a";}
+.#{$iconfont-css-prefix}-notification-o:before           {content:"\e90b";}
+.#{$iconfont-css-prefix}-mobile:before                   {content:"\e96a";}
+.#{$iconfont-css-prefix}-pad:before                      {content:"\e96b";}
+.#{$iconfont-css-prefix}-menu-fold:before                {content:"\e936";}
+.#{$iconfont-css-prefix}-menu-unfold:before              {content:"\e935";}
+.#{$iconfont-css-prefix}-mail:before                     {content:"\e925";}
+.#{$iconfont-css-prefix}-logout:before                   {content:"\e681";}
+.#{$iconfont-css-prefix}-link:before                     {content:"\ea09";}
+.#{$iconfont-css-prefix}-line-chart:before               {content:"\e67f";}
+.#{$iconfont-css-prefix}-home:before                     {content:"\e9bc";}
+.#{$iconfont-css-prefix}-laptop:before                   {content:"\e67a";}
+.#{$iconfont-css-prefix}-hdd:before                      {content:"\e675";}
+.#{$iconfont-css-prefix}-folder-open:before              {content:"\e671";}
+.#{$iconfont-css-prefix}-folder:before                   {content:"\e9a1";}
+.#{$iconfont-css-prefix}-folder-o:before                 {content:"\e9a2";}
+.#{$iconfont-css-prefix}-filter:before                   {content:"\e9f3";}
+.#{$iconfont-css-prefix}-filter-o:before                 {content:"\e9f4";}
+.#{$iconfont-css-prefix}-file-text:before                {content:"\e66c";}
+.#{$iconfont-css-prefix}-file:before                     {content:"\e66b";}
+.#{$iconfont-css-prefix}-file-unknown:before             {content:"\e6a6";}
+.#{$iconfont-css-prefix}-file-excel:before               {content:"\e6ac";}
+.#{$iconfont-css-prefix}-file-pdf:before                 {content:"\e6ab";}
+.#{$iconfont-css-prefix}-file-jpg:before                 {content:"\e6aa";}
+.#{$iconfont-css-prefix}-file-ppt:before                 {content:"\e6a7";}
+.#{$iconfont-css-prefix}-exception:before                {content:"\e66a";}
+.#{$iconfont-css-prefix}-export:before                   {content:"\e669";}
+.#{$iconfont-css-prefix}-desktop:before                  {content:"\e662";}
+.#{$iconfont-css-prefix}-edit:before                     {content:"\ea0f";}
+.#{$iconfont-css-prefix}-ellipsis:before                 {content:"\e667";}
+.#{$iconfont-css-prefix}-upload:before                   {content:"\ea08";}
+.#{$iconfont-css-prefix}-download:before                 {content:"\ea07";}
+.#{$iconfont-css-prefix}-delete:before                   {content:"\e661";}
+.#{$iconfont-css-prefix}-copy:before                     {content:"\e660";}
+.#{$iconfont-css-prefix}-customerservice:before          {content:"\e65e";}
+.#{$iconfont-css-prefix}-credit-card:before              {content:"\e65f";}
+.#{$iconfont-css-prefix}-code:before                     {content:"\e65d";}
+.#{$iconfont-css-prefix}-calendar:before                 {content:"\e9b1";}
+.#{$iconfont-css-prefix}-book:before                     {content:"\e655";}
+.#{$iconfont-css-prefix}-bars:before                     {content:"\e933";}
+.#{$iconfont-css-prefix}-bar-chart:before                {content:"\e651";}
+.#{$iconfont-css-prefix}-area-chart:before               {content:"\e64c";}
+.#{$iconfont-css-prefix}-question-circle-o:before        {content:"\e9d8";}
+.#{$iconfont-css-prefix}-question:before                 {content:"\e649";}
+.#{$iconfont-css-prefix}-question-circle:before          {content:"\e9d7";}
+.#{$iconfont-css-prefix}-pause-circle:before             {content:"\e644";}
+.#{$iconfont-css-prefix}-pause:before                    {content:"\e646";}
+.#{$iconfont-css-prefix}-pause-circle-o:before           {content:"\e645";}
+.#{$iconfont-css-prefix}-clock-circle:before             {content:"\e642";}
+.#{$iconfont-css-prefix}-clock-circle-o:before           {content:"\ea11";}
+.#{$iconfont-css-prefix}-swap:before                     {content:"\e641";}
+.#{$iconfont-css-prefix}-swap-left:before                {content:"\e63f";}
+.#{$iconfont-css-prefix}-swap-right:before               {content:"\e640";}
+.#{$iconfont-css-prefix}-plus-circle:before              {content:"\e9e3";}
+.#{$iconfont-css-prefix}-plus:before                     {content:"\e9e9";}
+.#{$iconfont-css-prefix}-plus-circle-o:before            {content:"\e9e4";}
+.#{$iconfont-css-prefix}-minus:before                    {content:"\e63b";}
+.#{$iconfont-css-prefix}-minus-circle-o:before           {content:"\e9e0";}
+.#{$iconfont-css-prefix}-minus-circle:before             {content:"\e9df";}
+.#{$iconfont-css-prefix}-plus-square:before              {content:"\e9e7";}
+.#{$iconfont-css-prefix}-plus-square-o:before            {content:"\e9e8";}
+.#{$iconfont-css-prefix}-info-circle-o:before            {content:"\e9d6";}
+.#{$iconfont-css-prefix}-info-circle:before              {content:"\e9d5";}
+.#{$iconfont-css-prefix}-info:before                     {content:"\e636";}
+.#{$iconfont-css-prefix}-exclamation-circle:before       {content:"\e9d9";}
+.#{$iconfont-css-prefix}-exclamation-circle-o:before     {content:"\e9da";}
+.#{$iconfont-css-prefix}-exclamation:before              {content:"\e633";}
+.#{$iconfont-css-prefix}-cross-circle:before             {content:"\e9d3";}
+.#{$iconfont-css-prefix}-cross-circle-o:before           {content:"\e9d4";}
+.#{$iconfont-css-prefix}-check-circle:before             {content:"\e9e1";}
+.#{$iconfont-css-prefix}-check-circle-o:before           {content:"\e9e2";}
+.#{$iconfont-css-prefix}-cross:before                    {content:"\ea19";}
+.#{$iconfont-css-prefix}-check:before                    {content:"\ea1b";}
+.#{$iconfont-css-prefix}-verticle-right:before           {content:"\e62c";}
+.#{$iconfont-css-prefix}-verticle-left:before            {content:"\e62b";}
+.#{$iconfont-css-prefix}-rollback:before                 {content:"\e62a";}
+.#{$iconfont-css-prefix}-enter:before                    {content:"\e6b6";}
+.#{$iconfont-css-prefix}-retweet:before                  {content:"\e627";}
+.#{$iconfont-css-prefix}-shrink:before                   {content:"\e628";}
+.#{$iconfont-css-prefix}-arrow-salt:before               {content:"\e629";}
+.#{$iconfont-css-prefix}-reload:before                   {content:"\ea13";}
+.#{$iconfont-css-prefix}-double-right:before             {content:"\ea2b";}
+.#{$iconfont-css-prefix}-double-left:before              {content:"\ea2a";}
+.#{$iconfont-css-prefix}-arrow-right:before              {content:"\e621";}
+.#{$iconfont-css-prefix}-arrow-up:before                 {content:"\e622";}
+.#{$iconfont-css-prefix}-arrow-down:before               {content:"\e623";}
+.#{$iconfont-css-prefix}-arrow-left:before               {content:"\e620";}
+.#{$iconfont-css-prefix}-left:before                     {content:"\ea2e";}
+.#{$iconfont-css-prefix}-right:before                    {content:"\ea2f";}
+.#{$iconfont-css-prefix}-down:before                     {content:"\ea2d";}
+.#{$iconfont-css-prefix}-up:before                       {content:"\ea30";}
+.#{$iconfont-css-prefix}-play-circle:before              {content:"\e61e";}
+.#{$iconfont-css-prefix}-play-circle-o:before            {content:"\e61f";}
+.#{$iconfont-css-prefix}-circle-left:before              {content:"\e61b";}
+.#{$iconfont-css-prefix}-circle-up:before                {content:"\e61c";}
+.#{$iconfont-css-prefix}-circle-down:before              {content:"\e61d";}
+.#{$iconfont-css-prefix}-circle-right:before             {content:"\e61a";}
+.#{$iconfont-css-prefix}-circle-o-right:before           {content:"\e616";}
+.#{$iconfont-css-prefix}-circle-o-up:before              {content:"\e618";}
+.#{$iconfont-css-prefix}-circle-o-down:before            {content:"\e617";}
+.#{$iconfont-css-prefix}-circle-o-left:before            {content:"\e619";}
+.#{$iconfont-css-prefix}-step-backward:before            {content:"\e614";}
+.#{$iconfont-css-prefix}-step-forward:before             {content:"\e615";}
+.#{$iconfont-css-prefix}-fast-backward:before            {content:"\e613";}
+.#{$iconfont-css-prefix}-fast-forward:before             {content:"\e612";}
+.#{$iconfont-css-prefix}-caret-left:before               {content:"\e60f";}
+.#{$iconfont-css-prefix}-caret-right:before              {content:"\e60a";}
+.#{$iconfont-css-prefix}-caret-down:before               {content:"\e611";}
+.#{$iconfont-css-prefix}-caret-up:before                 {content:"\e610";}
+.#{$iconfont-css-prefix}-forward:before                  {content:"\e608";}
+.#{$iconfont-css-prefix}-backward:before                 {content:"\e609";}
+.#{$iconfont-css-prefix}-caret-circle-o-down:before      {content:"\e60e";}
+.#{$iconfont-css-prefix}-caret-circle-o-right:before     {content:"\e60d";}
+.#{$iconfont-css-prefix}-caret-circle-o-left:before      {content:"\e60b";}
+.#{$iconfont-css-prefix}-caret-circle-left:before        {content:"\e604";}
+.#{$iconfont-css-prefix}-caret-circle-right:before       {content:"\e605";}
+.#{$iconfont-css-prefix}-caret-circle-up:before          {content:"\e606";}
+.#{$iconfont-css-prefix}-caret-circle-down:before        {content:"\e607";}
+.#{$iconfont-css-prefix}-qrcode:before                   {content:"\e6a5";}
+.#{$iconfont-css-prefix}-scan:before                     {content:"\e6af";}
+.#{$iconfont-css-prefix}-like:before                     {content:"\e6a3";}
+.#{$iconfont-css-prefix}-dislike:before                  {content:"\e6a2";}
+.#{$iconfont-css-prefix}-pay-circle:before               {content:"\e6a8";}
+.#{$iconfont-css-prefix}-pay-circle-o:before             {content:"\e6a9";}
+.#{$iconfont-css-prefix}-message:before                  {content:"\e6a4";}
+.#{$iconfont-css-prefix}-heart:before                    {content:"\e9f8";}
+.#{$iconfont-css-prefix}-heart-o:before                  {content:"\e9f9";}
+.#{$iconfont-css-prefix}-calculator:before               {content:"\e6b1";}
+.#{$iconfont-css-prefix}-pushpin:before                  {content:"\e6b5";}
+.#{$iconfont-css-prefix}-pushpin-o:before                {content:"\e6b3";}
+.#{$iconfont-css-prefix}-loading:before {
+                         display: inline-block;
+                         animation: loadingCircle 1s infinite linear;
+                         content: "\ea16";
+                       }
+
+.#{$iconfont-color-css-prefix}-mobile {
+  & .path1:before {
+    content: "\ea43";
+    color: rgb(111, 116, 126);
+  }
+  & .path2:before {
+    content: "\ea44";
+    margin-left: -1em;
+    color: rgb(12, 205, 98);
+  }
+}
+
+.#{$iconfont-color-file-css-prefix}-java .path1:before {
+  content: "\ea45";
+  color: rgb(245, 139, 40);
+}
+.#{$iconfont-color-file-css-prefix}-java .path2:before {
+  content: "\ea46";
+  margin-left: -1em;
+  color: rgb(218, 116, 21);
+}
+.#{$iconfont-color-file-css-prefix}-java .path3:before {
+  content: "\ea47";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+  @include opacity(0.7);
+
+}
+.#{$iconfont-color-file-css-prefix}-image .path1:before {
+  content: "\ea48";
+  color: rgb(13, 179, 255);
+}
+.#{$iconfont-color-file-css-prefix}-image .path2:before {
+  content: "\ea49";
+  margin-left: -1em;
+  color: rgb(5, 156, 225);
+}
+.#{$iconfont-color-file-css-prefix}-image .path3:before {
+  content: "\ea4a";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+  @include opacity(0.7);
+}
+.#{$iconfont-color-file-css-prefix}-txt .path1:before {
+  content: "\ea4b";
+  color: rgb(69, 152, 217);
+}
+.#{$iconfont-color-file-css-prefix}-txt .path2:before {
+  content: "\ea4c";
+  margin-left: -1em;
+  color: rgb(33, 124, 194);
+}
+.#{$iconfont-color-file-css-prefix}-txt .path3:before {
+  content: "\ea4d";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+  @include opacity(0.7);
+}
+.#{$iconfont-color-file-css-prefix}-music .path1:before {
+  content: "\ea4e";
+  color: rgb(255, 108, 164);
+}
+.#{$iconfont-color-file-css-prefix}-music .path2:before {
+  content: "\ea4f";
+  margin-left: -1em;
+  color: rgb(230, 71, 132);
+}
+.#{$iconfont-color-file-css-prefix}-music .path3:before {
+  content: "\ea50";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+  @include opacity(0.7);
+}
+.#{$iconfont-color-file-css-prefix}-pdf .path1:before {
+  content: "\ea51";
+  color: rgb(238, 91, 78);
+}
+.#{$iconfont-color-file-css-prefix}-pdf .path2:before {
+  content: "\ea52";
+  margin-left: -1em;
+  color: rgb(213, 69, 56);
+}
+.#{$iconfont-color-file-css-prefix}-pdf .path3:before {
+  content: "\ea53";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+  @include opacity(0.7);
+}
+.#{$iconfont-color-file-css-prefix}-ppt .path1:before {
+  content: "\ea54";
+  color: rgb(255, 138, 29);
+}
+.#{$iconfont-color-file-css-prefix}-ppt .path2:before {
+  content: "\ea55";
+  margin-left: -1em;
+  color: rgb(230, 119, 15);
+}
+.#{$iconfont-color-file-css-prefix}-ppt .path3:before {
+  content: "\ea56";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+  @include opacity(0.7);
+}
+.#{$iconfont-color-file-css-prefix}-rar .path1:before {
+  content: "\ea57";
+  color: rgb(238, 91, 78);
+}
+.#{$iconfont-color-file-css-prefix}-rar .path2:before {
+  content: "\ea58";
+  margin-left: -1em;
+  color: rgb(83, 176, 235);
+}
+.#{$iconfont-color-file-css-prefix}-rar .path3:before {
+  content: "\ea59";
+  margin-left: -1em;
+  color: rgb(86, 190, 101);
+}
+.#{$iconfont-color-file-css-prefix}-rar .path4:before {
+  content: "\ea5a";
+  margin-left: -1em;
+  color: rgb(208, 167, 95);
+}
+.#{$iconfont-color-file-css-prefix}-unknown .path1:before {
+  content: "\ea5b";
+  color: rgb(194, 198, 202);
+}
+.#{$iconfont-color-file-css-prefix}-unknown .path2:before {
+  content: "\ea5c";
+  margin-left: -1em;
+  color: rgb(167, 173, 180);
+}
+.#{$iconfont-color-file-css-prefix}-unknown .path3:before {
+  content: "\ea5d";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+  @include opacity(0.7);
+}
+.#{$iconfont-color-file-css-prefix}-video .path1:before {
+  content: "\ea5e";
+  color: rgb(215, 120, 239);
+}
+.#{$iconfont-color-file-css-prefix}-video .path2:before {
+  content: "\ea5f";
+  margin-left: -1em;
+  color: rgb(191, 95, 215);
+}
+.#{$iconfont-color-file-css-prefix}-video .path3:before {
+  content: "\ea60";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+  @include opacity(0.7);
+}
+.#{$iconfont-color-file-css-prefix}-xls .path1:before {
+  content: "\ea61";
+  color: rgb(74, 202, 92);
+}
+.#{$iconfont-color-file-css-prefix}-xls .path2:before {
+  content: "\ea62";
+  margin-left: -1em;
+  color: rgb(49, 175, 66);
+}
+.#{$iconfont-color-file-css-prefix}-xls .path3:before {
+  content: "\ea63";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+  @include opacity(0.7);
+}
+.#{$iconfont-color-file-css-prefix}-zip .path1:before {
+  content: "\ea64";
+  color: rgb(181, 194, 198);
+}
+.#{$iconfont-color-file-css-prefix}-zip .path2:before {
+  content: "\ea65";
+  margin-left: -1em;
+  color: rgb(143, 164, 170);
+}
+.#{$iconfont-color-file-css-prefix}-zip .path3:before {
+  content: "\ea66";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+  @include opacity(0.7);
+}
+.#{$iconfont-color-file-css-prefix}-apk .path1:before {
+  content: "\ea67";
+  color: rgb(115, 187, 58);
+}
+.#{$iconfont-color-file-css-prefix}-apk .path2:before {
+  content: "\ea68";
+  margin-left: -1em;
+  color: rgb(90, 154, 40);
+}
+.#{$iconfont-color-file-css-prefix}-apk .path3:before {
+  content: "\ea69";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+  @include opacity(0.7);
+}
+.#{$iconfont-color-file-css-prefix}-apk .path4:before {
+  content: "\ea6a";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+  @include opacity(0.7);
+}
+.#{$iconfont-color-file-css-prefix}-apk .path5:before {
+  content: "\ea6b";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+  @include opacity(0.7);
+}
+.#{$iconfont-color-file-css-prefix}-apk .path6:before {
+  content: "\ea6c";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+  @include opacity(0.7);
+}
+.#{$iconfont-color-file-css-prefix}-apk .path7:before {
+  content: "\ea6d";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+  @include opacity(0.7);
+}
+.#{$iconfont-color-file-css-prefix}-apk .path8:before {
+  content: "\ea6e";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+  @include opacity(0.7);
+}
+.#{$iconfont-color-css-prefix}-cloud_b .path1:before {
+  content: "\ea6f";
+  color: rgb(60, 168, 235);
+}
+.#{$iconfont-color-css-prefix}-cloud_b .path2:before {
+  content: "\ea70";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+  @include opacity(0.7);
+}
+.#{$iconfont-color-css-prefix}-cloud_b .path3:before {
+  content: "\ea71";
+  margin-left: -1em;
+  color: rgb(101, 195, 255);
+}
+.#{$iconfont-color-css-prefix}-cloud_b .path4:before {
+  content: "\ea72";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+  @include opacity(0.7);
+}
+.#{$iconfont-color-css-prefix}-cloud .path1:before {
+  content: "\ea73";
+  color: rgb(60, 168, 235);
+}
+.#{$iconfont-color-css-prefix}-cloud .path2:before {
+  content: "\ea74";
+  margin-left: -0.9375em;
+  color: rgb(255, 255, 255);
+  @include opacity(0.7);
+}
+.#{$iconfont-color-css-prefix}-cloud .path3:before {
+  content: "\ea75";
+  margin-left: -0.9375em;
+  color: rgb(101, 195, 255);
+}
+.#{$iconfont-color-css-prefix}-cloud .path4:before {
+  content: "\ea76";
+  margin-left: -0.9375em;
+  color: rgb(60, 168, 235);
+}
+.#{$iconfont-color-file-css-prefix}-damage .path1:before {
+  content: "\ea77";
+  color: rgb(194, 198, 202);
+}
+.#{$iconfont-color-file-css-prefix}-damage .path2:before {
+  content: "\ea78";
+  margin-left: -1em;
+  color: rgb(167, 173, 180);
+}
+.#{$iconfont-color-file-css-prefix}-damage .path3:before {
+  content: "\ea79";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+  @include opacity(0.7);
+}
+.#{$iconfont-color-file-css-prefix}-doc .path1:before {
+  content: "\ea7a";
+  color: rgb(60, 165, 232);
+}
+.#{$iconfont-color-file-css-prefix}-doc .path2:before {
+  content: "\ea7b";
+  margin-left: -1em;
+  color: rgb(42, 145, 211);
+}
+.#{$iconfont-color-file-css-prefix}-doc .path3:before {
+  content: "\ea7c";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+  @include opacity(0.7);
+}
+.#{$iconfont-color-css-prefix}-folder .path1:before {
+  content: "\ea7d";
+  color: rgb(231, 180, 25);
+}
+.#{$iconfont-color-css-prefix}-folder .path2:before {
+  content: "\ea7e";
+  margin-left: -0.9375em;
+  color: rgb(255, 255, 255);
+}
+.#{$iconfont-color-css-prefix}-folder .path3:before {
+  content: "\ea7f";
+  margin-left: -0.9375em;
+  color: rgb(255, 199, 31);
+}
+.#{$iconfont-color-file-css-prefix}-html .path1:before {
+  content: "\ea80";
+  color: rgb(60, 165, 232);
+}
+.#{$iconfont-color-file-css-prefix}-html .path2:before {
+  content: "\ea81";
+  margin-left: -1em;
+  color: rgb(42, 145, 211);
+}
+.#{$iconfont-color-file-css-prefix}-html .path3:before {
+  content: "\ea82";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+  @include opacity(0.7);
+}
+.#{$iconfont-color-css-prefix}-ic_add .path1:before {
+  content: "\ea83";
+  color: rgb(255, 157, 8);
+}
+.#{$iconfont-color-css-prefix}-ic_add .path2:before {
+  content: "\ea84";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.#{$iconfont-color-css-prefix}-ic_address .path1:before {
+  content: "\ea85";
+  color: rgb(1, 184, 184);
+}
+.#{$iconfont-color-css-prefix}-ic_address .path2:before {
+  content: "\ea86";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.#{$iconfont-color-css-prefix}-ic_approval .path1:before {
+  content: "\ea87";
+  color: rgb(255, 115, 55);
+}
+.#{$iconfont-color-css-prefix}-ic_approval .path2:before {
+  content: "\ea88";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.#{$iconfont-color-css-prefix}-ic_attend .path1:before {
+  content: "\ea89";
+  color: rgb(51, 197, 54);
+}
+.#{$iconfont-color-css-prefix}-ic_attend .path2:before {
+  content: "\ea8a";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.#{$iconfont-color-css-prefix}-ic_attendmac .path1:before {
+  content: "\ea8b";
+  color: rgb(87, 89, 101);
+}
+.#{$iconfont-color-css-prefix}-ic_attendmac .path2:before {
+  content: "\ea8c";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.#{$iconfont-color-css-prefix}-ic_bbs .path1:before {
+  content: "\ea8d";
+  color: rgb(58, 128, 247);
+}
+.#{$iconfont-color-css-prefix}-ic_bbs .path2:before {
+  content: "\ea8e";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.#{$iconfont-color-css-prefix}-ic_blog .path1:before {
+  content: "\ea8f";
+  color: rgb(255, 157, 10);
+}
+.#{$iconfont-color-css-prefix}-ic_blog .path2:before {
+  content: "\ea90";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.#{$iconfont-color-css-prefix}-ic_broadcast .path1:before {
+  content: "\ea91";
+  color: rgb(255, 135, 16);
+}
+.#{$iconfont-color-css-prefix}-ic_broadcast .path2:before {
+  content: "\ea92";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.#{$iconfont-color-css-prefix}-ic_broadcast .path3:before {
+  content: "\ea93";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.#{$iconfont-color-css-prefix}-ic_broadcast .path4:before {
+  content: "\ea94";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.#{$iconfont-color-css-prefix}-ic_business .path1:before {
+  content: "\ea95";
+  color: rgb(51, 197, 54);
+}
+.#{$iconfont-color-css-prefix}-ic_business .path2:before {
+  content: "\ea96";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.#{$iconfont-color-css-prefix}-ic_calendar .path1:before {
+  content: "\ea97";
+  color: rgb(211, 162, 105);
+}
+.#{$iconfont-color-css-prefix}-ic_calendar .path2:before {
+  content: "\ea98";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.#{$iconfont-color-css-prefix}-ic_communicating .path1:before {
+  content: "\ea99";
+  color: rgb(255, 159, 15);
+}
+.#{$iconfont-color-css-prefix}-ic_communicating .path2:before {
+  content: "\ea9a";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.#{$iconfont-color-css-prefix}-ic_community .path1:before {
+  content: "\ea9b";
+  color: rgb(51, 141, 241);
+}
+.#{$iconfont-color-css-prefix}-ic_community .path2:before {
+  content: "\ea9c";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.#{$iconfont-color-css-prefix}-ic_custom .path1:before {
+  content: "\ea9d";
+  color: rgb(72, 136, 255);
+}
+.#{$iconfont-color-css-prefix}-ic_custom .path2:before {
+  content: "\ea9e";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.#{$iconfont-color-css-prefix}-ic_customize .path1:before {
+  content: "\ea9f";
+  color: rgb(253, 181, 37);
+}
+.#{$iconfont-color-css-prefix}-ic_customize .path2:before {
+  content: "\eaa0";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.#{$iconfont-color-css-prefix}-ic_discuss .path1:before {
+  content: "\eaa1";
+  color: rgb(31, 185, 236);
+}
+.#{$iconfont-color-css-prefix}-ic_discuss .path2:before {
+  content: "\eaa2";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.#{$iconfont-color-css-prefix}-ic_discuss .path3:before {
+  content: "\eaa3";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.#{$iconfont-color-css-prefix}-ic_discuss .path4:before {
+  content: "\eaa4";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.#{$iconfont-color-css-prefix}-ic_discuss .path5:before {
+  content: "\eaa5";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.#{$iconfont-color-css-prefix}-ic_folder .path1:before {
+  content: "\eaa6";
+  color: rgb(0, 167, 255);
+}
+.#{$iconfont-color-css-prefix}-ic_folder .path2:before {
+  content: "\eaa7";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.#{$iconfont-color-css-prefix}-ic_friends .path1:before {
+  content: "\eaa8";
+  color: rgb(51, 197, 54);
+}
+.#{$iconfont-color-css-prefix}-ic_friends .path2:before {
+  content: "\eaa9";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.#{$iconfont-color-css-prefix}-ic_groupmessage .path1:before {
+  content: "\eaaa";
+  color: rgb(77, 144, 237);
+}
+.#{$iconfont-color-css-prefix}-ic_groupmessage .path2:before {
+  content: "\eaab";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.#{$iconfont-color-css-prefix}-ic_groupmessage .path3:before {
+  content: "\eaac";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.#{$iconfont-color-css-prefix}-ic_groupmessage .path4:before {
+  content: "\eaad";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.#{$iconfont-color-css-prefix}-ic_group .path1:before {
+  content: "\eaae";
+  color: rgb(77, 144, 237);
+}
+.#{$iconfont-color-css-prefix}-ic_group .path2:before {
+  content: "\eaaf";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.#{$iconfont-color-css-prefix}-ic_help .path1:before {
+  content: "\eab0";
+  color: rgb(0, 200, 122);
+}
+.#{$iconfont-color-css-prefix}-ic_help .path2:before {
+  content: "\eab1";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.#{$iconfont-color-css-prefix}-ic_hint .path1:before {
+  content: "\eab2";
+  color: rgb(0, 167, 255);
+}
+.#{$iconfont-color-css-prefix}-ic_hint .path2:before {
+  content: "\eab3";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.#{$iconfont-color-css-prefix}-ic_igoal .path1:before {
+  content: "\eab4";
+  color: rgb(69, 147, 255);
+}
+.#{$iconfont-color-css-prefix}-ic_igoal .path2:before {
+  content: "\eab5";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.#{$iconfont-color-css-prefix}-ic_invite .path1:before {
+  content: "\eab6";
+  color: rgb(251, 92, 103);
+}
+.#{$iconfont-color-css-prefix}-ic_invite .path2:before {
+  content: "\eab7";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.#{$iconfont-color-css-prefix}-ic_jingoal .path1:before {
+  content: "\eab8";
+  color: rgb(34, 153, 238);
+}
+.#{$iconfont-color-css-prefix}-ic_jingoal .path2:before {
+  content: "\eab9";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.#{$iconfont-color-css-prefix}-ic_knowledge .path1:before {
+  content: "\eaba";
+  color: rgb(0, 200, 123);
+}
+.#{$iconfont-color-css-prefix}-ic_knowledge .path2:before {
+  content: "\eabb";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.#{$iconfont-color-css-prefix}-ic_log .path1:before {
+  content: "\eabc";
+  color: rgb(211, 162, 105);
+}
+.#{$iconfont-color-css-prefix}-ic_log .path2:before {
+  content: "\eabd";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.#{$iconfont-color-css-prefix}-ic_mail .path1:before {
+  content: "\eabe";
+  color: rgb(46, 151, 255);
+}
+.#{$iconfont-color-css-prefix}-ic_mail .path2:before {
+  content: "\eabf";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.#{$iconfont-color-css-prefix}-ic_memo .path1:before {
+  content: "\eac0";
+  color: rgb(1, 184, 184);
+}
+.#{$iconfont-color-css-prefix}-ic_memo .path2:before {
+  content: "\eac1";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.#{$iconfont-color-css-prefix}-ic_pad .path1:before {
+  content: "\eac2";
+  color: rgb(65, 204, 232);
+}
+.#{$iconfont-color-css-prefix}-ic_pad .path2:before {
+  content: "\eac3";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.#{$iconfont-color-css-prefix}-ic_pc .path1:before {
+  content: "\eac4";
+  color: rgb(65, 204, 232);
+}
+.#{$iconfont-color-css-prefix}-ic_pc .path2:before {
+  content: "\eac5";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.#{$iconfont-color-css-prefix}-ic_phonesms .path1:before {
+  content: "\eac6";
+  color: rgb(58, 128, 247);
+}
+.#{$iconfont-color-css-prefix}-ic_phonesms .path2:before {
+  content: "\eac7";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.#{$iconfont-color-css-prefix}-ic_phone .path1:before {
+  content: "\eac8";
+  color: rgb(65, 204, 232);
+}
+.#{$iconfont-color-css-prefix}-ic_phone .path2:before {
+  content: "\eac9";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.#{$iconfont-color-css-prefix}-ic_plan .path1:before {
+  content: "\eaca";
+  color: rgb(211, 162, 105);
+}
+.#{$iconfont-color-css-prefix}-ic_plan .path2:before {
+  content: "\eacb";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.#{$iconfont-color-css-prefix}-ic_project .path1:before {
+  content: "\eacc";
+  color: rgb(144, 110, 219);
+}
+.#{$iconfont-color-css-prefix}-ic_project .path2:before {
+  content: "\eacd";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.#{$iconfont-color-css-prefix}-ic_publicnotice .path1:before {
+  content: "\eace";
+  color: rgb(255, 128, 26);
+}
+.#{$iconfont-color-css-prefix}-ic_publicnotice .path2:before {
+  content: "\eacf";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.#{$iconfont-color-css-prefix}-ic_qyq .path1:before {
+  content: "\ead0";
+  color: rgb(34, 153, 238);
+}
+.#{$iconfont-color-css-prefix}-ic_qyq .path2:before {
+  content: "\ead1";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.#{$iconfont-color-css-prefix}-ic_service .path1:before {
+  content: "\ead2";
+  color: rgb(255, 98, 58);
+}
+.#{$iconfont-color-css-prefix}-ic_service .path2:before {
+  content: "\ead3";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.#{$iconfont-color-css-prefix}-ic_set .path1:before {
+  content: "\ead4";
+  color: rgb(117, 135, 144);
+}
+.#{$iconfont-color-css-prefix}-ic_set .path2:before {
+  content: "\ead5";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.#{$iconfont-color-css-prefix}-ic_shang .path1:before {
+  content: "\ead6";
+  color: rgb(58, 128, 247);
+}
+.#{$iconfont-color-css-prefix}-ic_shang .path2:before {
+  content: "\ead7";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.#{$iconfont-color-css-prefix}-ic_task .path1:before {
+  content: "\ead8";
+  color: rgb(113, 116, 235);
+}
+.#{$iconfont-color-css-prefix}-ic_task .path2:before {
+  content: "\ead9";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}

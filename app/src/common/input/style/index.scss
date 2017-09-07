@@ -1,0 +1,43 @@
+@import "../../style/themes/default";
+@import "~jgfe-styles/mixins/index";
+@import "./mixin";
+
+.jgui-input-withClear {
+  display: inline-block;
+  position: relative;
+
+  .jgicon-cross-circle {
+    display: none;
+    font-size: 12px;
+    line-height: 1;
+    z-index: 100;
+    position: absolute;
+    top: 50%;
+    right: 4px;
+    margin-top: -6px;
+    color: #ccc;
+
+    &:hover {
+      color: $input-color;
+    }
+  }
+
+  &.jgui-input-noempty {
+    .jgicon-cross-circle {
+      display: inline-block;
+    }
+    .jgui-input {
+      padding-right: 16px;
+    }
+  }
+}
+
+// Input styles
+.jgui-input {
+  @include input();
+}
+
+//== Style for input-group: input with label, with button or dropdown...
+.jgui-input-group {
+  @include input-group("jgui-input");
+}

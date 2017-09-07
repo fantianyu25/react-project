@@ -1,0 +1,79 @@
+@import "../../style/themes/default";
+@import "~jgfe-styles/mixins/index";
+@import "../../button/style/mixin";
+@import "../../input/style/index";
+
+.jgui-search-input-wrapper {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.jgui-search-input {
+  &.jgui-input-group .jgui-input:first-child,
+  &.jgui-input-group .jgui-select:first-child {
+    border-radius: $border-radius-base;
+    position: absolute;
+    top: -1px;
+    width: 100%;
+  }
+
+  .jgui-search-btn {
+    @include btn-default();
+    border-radius: 0;
+    left: -1px;
+    position: relative;
+    border-width: 0 0 0 1px;
+    z-index: 2;
+    padding-left: 8px;
+    padding-right: 8px;
+    &:hover {
+      border-color: $border-color-base;
+    }
+    form & {
+      padding-top: 6px;
+      padding-bottom: 6px;
+    }
+  }
+
+  &#{&}-focus .jgui-search-btn-noempty,
+  &:hover .jgui-search-btn-noempty {
+    @include btn-primary();
+  }
+
+  .jgicon-cross-circle {
+       display: none;
+       font-size: 12px;
+       line-height: 1;
+       z-index: 100;
+       position: absolute;
+       top: 50%;
+       right: 36px;
+       margin-top: -6px;
+       color: #ccc;
+
+      &:hover {
+         color: $input-color;
+      }
+  }
+
+  &-noempty {
+     .jgicon-cross-circle {
+        display: inline-block;
+     }
+  }
+
+  .jgui-input {
+    padding-right: 50px;
+  }
+
+  // Size
+  &-lg {
+    .jgicon-cross-circle {
+       right: 40px;
+    }
+  }
+
+  &-sm {
+
+  }
+}

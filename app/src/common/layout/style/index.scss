@@ -1,0 +1,100 @@
+@import "../../style/themes/default";
+@import "~jgfe-styles/mixins/index";
+@import "./mixin";
+
+// Grid system
+.jgui-row {
+  @include make-row();
+  display: block;
+}
+
+.jgui-row-flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  &:before,
+  &:after {
+    display: flex;
+  }
+}
+
+// x轴原点
+.jgui-row-flex-start {
+  justify-content: flex-start;
+}
+
+// x轴居中
+.jgui-row-flex-center {
+  justify-content: center;
+}
+
+// x轴反方向
+.jgui-row-flex-end {
+  justify-content: flex-end;
+}
+
+// x轴平分
+.jgui-row-flex-space-between {
+  justify-content: space-between;
+}
+
+// x轴有间隔地平分
+.jgui-row-flex-space-around {
+  justify-content: space-around;
+}
+
+// 顶部对齐
+.jgui-row-flex-top {
+  align-items: flex-start;
+}
+
+// 居中对齐
+.jgui-row-flex-middle {
+  align-items: center;
+}
+
+// 底部对齐
+.jgui-row-flex-bottom {
+  align-items: flex-end;
+}
+
+.jgui-col {
+  position: relative;
+  display: block;
+}
+
+@include make-grid-columns();
+@include make-grid();
+
+// Extra small grid
+//
+// Columns, offsets, pushes, and pulls for extra small devices like
+// smartphones.
+
+@include make-grid(-xs);
+
+// Small grid
+//
+// Columns, offsets, pushes, and pulls for the small device range, from phones
+// to tablets.
+
+@media (min-width: $screen-sm-min) {
+  @include make-grid(-sm);
+}
+
+// Medium grid
+//
+// Columns, offsets, pushes, and pulls for the desktop device range.
+
+@media (min-width: $screen-md-min) {
+  @include make-grid(-md);
+}
+
+// Large grid
+//
+// Columns, offsets, pushes, and pulls for the large desktop device range.
+
+@media (min-width: $screen-lg-min) {
+  @include make-grid(-lg);
+}
